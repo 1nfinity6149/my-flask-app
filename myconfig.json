@@ -1,0 +1,27 @@
+{
+    "model_params": {
+        "n_crops": 1,
+        "weights": [1.0, 0.0],
+        "economic_benefit": [1.2],
+        "reservoirs": {
+          "reservoir_capacity": [100, 100],
+          "n_reservoir_plots": [3, 5]
+        },
+        "water_efficiency": 0.9,
+        "water_demand":[[30], [10], [10], [10], [30], [10], [10], [30]],
+        "user_params": {
+          "is_input": false,
+          "user_percentage": [0.05, 0.1, 0.15, 0.1, 0.1, 0.1, 0.1, 0.3]
+      }
+    },
+    "ga_params": {
+        "pop": {
+          "Encoding": "RI",
+          "NIND": 100
+        },
+        "other": {
+          "MAXGEN": 1000,
+          "logTras": 0
+        }
+    }
+}
